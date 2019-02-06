@@ -1,0 +1,22 @@
+<div>
+  <table class="table table-bordered acttable">
+    <thead>
+      <th ng-repeat="hd in conf.heads">
+        {{hd}}
+      </th>
+    </thead>
+    <tbody>
+      <tr ng-repeat="data in conf.myData | limitTo:numLimit:start">
+        <td ng-repeat="d in conf.heads"><span>{{data[d]}}</span>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5"><span style="padding:5px">{{numLimit}} records per page</span> <span style='text-align: center'>Page#
+            {{currentPage}} of {{pages}}</span>
+          <span style="float:right;padding:5px"><a ng-hide="hidePrev()" href="" ng-click="PrevPage()">Prev</a></span>
+
+          <span style="float:right;padding:5px"><a ng-hide="hideNext()" href="" ng-click="nextPage()">Next</a></span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
