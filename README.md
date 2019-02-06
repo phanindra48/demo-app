@@ -1,4 +1,4 @@
-# Steps
+# Steps to run the demo app
 
 ## Prerequisites
 
@@ -9,7 +9,7 @@ mysql -uroot chad < /file/path/chad.sql
 ```
 
 ## Clone the project
-`git clone `
+`git clone https://github.com/phanindra48/demo-app`
 
 ## Install packages
 
